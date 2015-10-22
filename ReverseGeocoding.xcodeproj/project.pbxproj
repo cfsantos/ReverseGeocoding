@@ -15,6 +15,8 @@
 		E4F55F881BD6843000DC99C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4F55F861BD6843000DC99C3 /* LaunchScreen.storyboard */; };
 		E4F55F931BD6843100DC99C3 /* ReverseGeocodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F55F921BD6843100DC99C3 /* ReverseGeocodingTests.m */; };
 		E4F55F9E1BD6843100DC99C3 /* ReverseGeocodingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F55F9D1BD6843100DC99C3 /* ReverseGeocodingUITests.m */; };
+		E4F55FAC1BD6844C00DC99C3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F55FAB1BD6844C00DC99C3 /* MapKit.framework */; };
+		E4F55FAE1BD6845100DC99C3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F55FAD1BD6845100DC99C3 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		E4F55F991BD6843100DC99C3 /* ReverseGeocodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReverseGeocodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F55F9D1BD6843100DC99C3 /* ReverseGeocodingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseGeocodingUITests.m; sourceTree = "<group>"; };
 		E4F55F9F1BD6843100DC99C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4F55FAB1BD6844C00DC99C3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E4F55FAD1BD6845100DC99C3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F55FAE1BD6845100DC99C3 /* CoreLocation.framework in Frameworks */,
+				E4F55FAC1BD6844C00DC99C3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,8 @@
 		E4F55F6C1BD6843000DC99C3 = {
 			isa = PBXGroup;
 			children = (
+				E4F55FAD1BD6845100DC99C3 /* CoreLocation.framework */,
+				E4F55FAB1BD6844C00DC99C3 /* MapKit.framework */,
 				E4F55F771BD6843000DC99C3 /* ReverseGeocoding */,
 				E4F55F911BD6843100DC99C3 /* ReverseGeocodingTests */,
 				E4F55F9C1BD6843100DC99C3 /* ReverseGeocodingUITests */,
@@ -412,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReverseGeocoding/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Personal.ReverseGeocoding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReverseGeocoding/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Personal.ReverseGeocoding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +506,7 @@
 				E4F55FA41BD6843100DC99C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4F55FA51BD6843100DC99C3 /* Build configuration list for PBXNativeTarget "ReverseGeocodingTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +515,7 @@
 				E4F55FA71BD6843100DC99C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4F55FA81BD6843100DC99C3 /* Build configuration list for PBXNativeTarget "ReverseGeocodingUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +524,7 @@
 				E4F55FAA1BD6843100DC99C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
